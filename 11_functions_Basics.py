@@ -11,3 +11,19 @@ num = int(input("Enter a number to find its multiplication table : "))
 value = int(input("Enter a number to find its multiplication table : "))
 print("The multiplication table of ", num, " is")
 multiplication(num, value)
+
+
+# Updated on 2024/01/21
+
+#To find cube of number using nested function
+
+def cube(x):
+    def square(a):
+        s = a*a
+        print(s)
+        return s 
+    c = square(x)*x
+    print(c)
+
+n= int(input("Enter the value\n"))
+cube(n) 
