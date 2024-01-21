@@ -27,3 +27,16 @@ def cube(x):
 
 n= int(input("Enter the value\n"))
 cube(n) 
+
+# Updated on 2024/01/21
+
+#To find square and cube using lambda function
+
+def fun(f,n):
+    print(f(n), end=" ")
+square = lambda x: x*x
+cube = lambda x: x*x*x
+
+n= int(input("Enter any numbers: \n"))
+fun(square, n)
+fun(cube, n)
