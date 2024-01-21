@@ -1,7 +1,7 @@
 # Created on 2024/01/21
 # By Suman Regmi
 
-#To cube of number using nested function
+#To find cube of number using nested function
 
 def cube(x):
     def square(a):
