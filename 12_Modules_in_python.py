@@ -1,3 +1,6 @@
+# Created on 2024/01/22
+# By Suman Regmi
+
 import math # This imports entire math module
 from math import pi #  This imports only pi from math
 from math import sqrt as square_root # This defines the custom names of modules
@@ -25,4 +28,12 @@ print('Random integer between 1 and 50: ', b)
 print('Random choice among apple, banana and cherry: ', c)
 print('Random sample of 3 numbers from the list: ', d)
 print('Shuffled list: ', e)
+
+#Finding mean, median and mode using Modules
+from statistics import mean, median, mode
+numbers = [2, 6, 7, 8, 9, 1 , 2, 3, 5, 6, 7]
+print("Mean of given data set: ", mean(numbers))
+print("Median of given data set: ", median(numbers))
+print("Mode of given data set: ", mode(numbers))
+
 
