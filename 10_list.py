@@ -60,3 +60,20 @@ list4 = [3, 2, [1, 9, 7], 8, 1]
 print(list4)            # Prints entire list
 print(list4[2])         # Prints the third elements of list which is also another list.
 print(list4[2][1])      # Prints the second elements of nested list which in the second index of main list.
+
+list4.insert(3, 25) #inserting 25 in third index
+print(list4)        # After inserting new element in list.
+
+list4.pop() #Deltes last function of list.
+print(list4)
+
+list4.reverse()
+print(list4)   # Reversing the order of list.
+
+list1.sort() #sorts in ascending order
+print("\nList1 sorting",list1)
+
+list1.sort(reverse=True) #sorts in descending order
+print("\nList 1 sorting in reverse" , list1) 
+print("highest element in list is: ", max(list1))
+print("smallest element in list is: ", min(list1))
