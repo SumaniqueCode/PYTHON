@@ -3,8 +3,8 @@
 
 # in write operation ('w') if the file exists then it opens else it creates new file and opens
 file = open('newTextFile.txt', 'w') 
-file.write("Hello World\n") #  write function is used to add data into a file
-
+file.write("Hello World!\n") #  write function is used to add data into a file
+file.writelines("This is the file generated while learning Python File Handling\n")
 list1 = ["this is first string data\n", "This is second string data\n"]
 file.writelines(list1) # writelines adds multiple lines in the file from the list
 file.close() # closes the file
