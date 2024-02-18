@@ -19,5 +19,26 @@ print(read_file.readline()) # readline() reads the first line of file readlines(
 
 for line in read_file:  # loop through each line in the file
     print(line) 
+    print(line.split()) #splits all the words from the line
 
 read_file.close()
+
+
+#Updated on 2024/02/18
+
+with open('old_filename.txt', 'w') as old_filename:   # using with keyword which automatically close the file after use
+    print("File Created")
+
+#For renaming any file name
+import os
+os.rename("old_filename.txt",  "new_filename.txt")
+print("File Renamed")
+
+# For deleting any file
+os.remove("new_filename.txt")
+print("File Deleted")
+# To check if a file exists or not
+if os.path.exists("new_filename.txt"):     # returns True if file exists otherwise False
+    print ("The file exists.")
+else:                                       # returns False if file does not exist
+    print ("The file does not exist.")
