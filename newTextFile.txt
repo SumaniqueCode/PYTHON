@@ -1,4 +1,5 @@
-Hello World
+Hello World!
+This is the file generated while learning Python File Handling
 this is first string data
 This is second string data
 Added new data
