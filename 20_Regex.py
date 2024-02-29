@@ -30,8 +30,16 @@ if(found == 1 ):
         print(f"\nNew String after replacement:\n{new_string}")
 
 #for findall regex we need to have list
-new_pattern = r"[a-zA-z]+\d+"
+new_pattern = r"[a-zA-z]+\d+" #a-z for lowecase A-Z for uppercase \d for digits
 new_string = "hello123 98812 Test223 Python39 test hello world 59923 python HELLO22 Learning123"
 dataList = re.findall(new_pattern, new_string)
 for data in dataList:
     print(data, end=" ")
+
+# some examples of patterns
+
+# pattern = 'a.*?b$' # starts with a with any characters in middle and ends with b
+# pattern = 'ab{3}' # a followed by 3 b
+# pattern ='^[a-zA-Z0-9!@#$%&*?/=()_+]{,}$' #matches with lowercase uppcase numbers and given symbols
+# pattern = "[a-zA-Z]+[\s][0-9]+" # matches alphabets followed by space and then number
+# pattern = "\w*Z.\w*" # matches anything that comes before Z and anything that comes after Z
