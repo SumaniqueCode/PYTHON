@@ -1,7 +1,7 @@
 # Created on 2024/02/29
 # By Suman Regmi
 
-class calculator:
+class calculator():
     def add(self, x, y):
         return x+y
     def subtract(self,x,y):
