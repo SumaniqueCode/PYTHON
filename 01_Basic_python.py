@@ -9,5 +9,5 @@ print("\nHello World!\n")
 # int is defined because by default input is in a string.
 a = int(input("Enter the first value\n"))
 b = int(input("Enter the second value\n"))
-sum = a+b
+sum = a-b
 print("The sum is ", sum)
