@@ -4,7 +4,7 @@
 # try except
 try:  # the main logic is in try block
     x = 10 / 0
-except (ZeroDivisionError) as e: # if  any error occurs in try block, it will be caught by except block and handled accordingly.
+except (ZeroDivisionError):  # if  any error occurs in try block, it will be caught by except block and handled accordingly.
     print("Cannot divide by zero.")
 
 # multiple exception
@@ -57,17 +57,15 @@ except MyError as e:
 # implementation
 def valueChecker(text):
     if a == "":
-        raise ValueError(
-            "\nString cannot be empty"
-        )  # throws an exception if the user enters nothing
+        raise ValueError("\nString cannot be empty")  # throws an exception if the user enters nothing
     else:
         return '\nEntered string is "' + a + '"'
 
 
 a = input("Enter any string: ")
-try: 
+try:
     print(valueChecker(a))
-except (ValueError) as error: 
+except ValueError as error:
     print(error)
 else:  # this block will execute if no errors occur in the try block. It's optional.
     print("Program Executed successfully")
